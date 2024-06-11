@@ -66,8 +66,9 @@ hr {
 }
 h1 {
   font-family: itc-avant-garde-gothic-pro, sans-serif;
-  font-weight: 500;
-  font-style: medium;
+  /* font-weight: 500; */
+  /* font-style: medium; */
+  font-style: bold;
   color: var(--body-contrast);
   font-size: 48px;
   text-transform: uppercase;

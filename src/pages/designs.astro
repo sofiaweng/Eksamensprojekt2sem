@@ -26,18 +26,18 @@ console.log(data);
   </div>
 
  
-
+<h2 class="filter">FILTER</h2>
   <hr />
   <div class="flex">
-    <a href="/designs/recent"><h3>recent</h3></a>
+    <a href="/designs/recent"><p>recent</p></a>
     <span class="line">|</span>
-    <a href="/designs/older"><h3>older</h3></a>
+    <a href="/designs/older"><p>older</p></a>
     <span class="line">|</span>
-    <a href="/designs/national"><h3>national</h3></a>
+    <a href="/designs/national"><p>national</p></a>
     <span class="line">|</span>
-    <a href="/designs/international"><h3 class="">international</h3></a>
+    <a href="/designs/international"><p class="">international</p></a>
     <span class="line">|</span>
-    <a href="/designs/all"><h3 class="">all</h3></a>
+    <a href="/designs/all"><p class="">all</p></a>
   </div>
   <hr />
 
@@ -157,12 +157,17 @@ console.log(data);
   .selected {
     border-bottom: solid var(--body-contrast) 2px;
   }
-
-  .flex h3 {
+  
+.filter{
+  font-size: 2.5rem;
+}
+  .flex p {
     border-bottom: solid transparent 2px;
     transition: var(--unfocus);
+    font-size: 1.5rem;
+    text-transform: uppercase;
   }
-  .flex h3:hover {
+  .flex p:hover {
     border-bottom: solid var(--body-contrast) 2px;
     animation: border_anim 0.3s ease-in-out forwards;
   }

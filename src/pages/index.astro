@@ -39,14 +39,14 @@ console.log(data);
 
   <section id="type" class="typecontainer">
     <a class="typewrapper type2" href="/designs?type=Stage">
-      <img src="/proforma_800_677.avif" alt="Image of lighting setting on Hotel Proforma play" width="800" height="677" />
+      <img src="https://voorde.dk/kea/10_eksamen/media/images/stage/20_1200.webp" alt="Image of lighting setting on Hotel Proforma play" width="800" height="677" />
       <h1>stage <br /> lighting</h1>
     </a>
 
     <hr class="linedesktop" />
     <a class="typewrapper type1" href="/designs?type=Architectural">
-      <img src="/dac_1000_471.avif" alt="Image of dac exhibition" width="1000" height="471" />
-      <h1>architec&shy;tural lighting</h1>
+      <img src="https://voorde.dk/kea/10_eksamen/media/images/tivoli4_1000_667.webp" alt="Image of dac exhibition" width="1000" height="471" />
+      <h1>architec&shy;tural  <br />lighting</h1>
     </a>
   </section>
 </MainLayout>
@@ -123,8 +123,8 @@ transition: var(--focus);
   }
   #type img {
     object-fit: cover;
-    aspect-ratio: 1/1;
-    border-bottom: 1.5px var(--body-contrast) solid;
+    /* aspect-ratio: 3/1; */
+    /* border-bottom: 1.5px var(--body-contrast) solid; */
     border-top: 1.5px var(--body-contrast) solid;
   }
   .typewrapper {
@@ -144,7 +144,11 @@ transition: var(--focus);
     text-align: right;
   }
   .type2 h1 {
-    margin-top: auto;
+    /* margin-top: auto; */
+    text-align: left;
+  }
+  .type1 h1{
+    text-align: right;
   }
   .typewrapper h1 {
     z-index: 20;
@@ -158,10 +162,17 @@ transition: var(--focus);
 
   /* Desktop */
   @media (min-width: 900px) {
+    #type img {
+    object-fit: cover;
+    aspect-ratio: 1.25/1;
+
+    border-top: 1.5px var(--body-contrast) solid;
+  }
     #type {
       margin-left: -96px;
       margin-right: -96px;
     }
+
     .typecontainer {
       display: grid;
       grid-template-columns: 10fr 0.1% 10fr;
@@ -184,12 +195,14 @@ transition: var(--focus);
       transition: var(--focus);
       color: var(--secondary);
     }
-
+.type1{
+  border-left: 1.5px solid var(--body-contrast);
+}
     .type2 h1 {
       margin: 0;
     }
     .type1 h1 {
-      text-align: right;
+      text-align: left;
       margin-top: auto;
       margin-bottom: 5rem;
     }

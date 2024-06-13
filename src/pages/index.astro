@@ -17,7 +17,7 @@ console.log(data);
       <h1 class="displaytext">jesper</h1>
       <div class="contentwrapper1">
         <h3>light designer</h3>
-        <hr />
+        <hr id="linje" />
         <h3>portfolio</h3>
       </div>
     </div>
@@ -162,6 +162,12 @@ transition: var(--focus);
 
   /* Desktop */
   @media (min-width: 900px) {
+
+  #linje {
+  border: 1px solid var(--body-contrast);
+  height:1.1rem;
+
+  }
     #type img {
     object-fit: cover;
     aspect-ratio: 1.25/1;

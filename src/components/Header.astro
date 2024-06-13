@@ -6,7 +6,7 @@ import Dropdown from "../components/Dropdown.astro";
 
 <header>
     <nav class="navbar">
-        <a href="/"><img class="nav-branding" src="/faviconn.svg" alt="logo"></a>
+        <a href="/"><img class="nav-branding" src="/logo.svg" alt="logo"></a>
         <ul class="nav-menu">
             <li class="nav-item"><a href="/" class="nav-link hidedesktop">HOME</a></li>
            <hr>
@@ -59,6 +59,8 @@ import Dropdown from "../components/Dropdown.astro";
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem;
+  background-image: url("/gradient1_1000_605.avif");
+  background-size: cover;
   
 }
 header{
@@ -92,7 +94,7 @@ transition: var(--unfocus);
 } */
 /*logo*/
 .nav-branding {
-  width: 8ch;
+  width: 20ch;
   margin-left: 5px;
 }
 .nav-branding a .active{
@@ -150,7 +152,10 @@ transition: var(--unfocus);
     transition: 0.3s;
     padding: 1.5rem;
     z-index: 200;
-    padding-bottom: 90vh;
+    padding-bottom: 35vh;
+     background-image: url("/header.webp"); 
+     background-size: cover;
+     border-bottom: 1px solid var(--body-contrast);
   }
   h1{
     text-align: left;
@@ -168,7 +173,7 @@ transition: var(--unfocus);
 
  
   .nav-link:hover, .active, p:hover{
-    border-bottom:none;
+
     transition: 0.2s;
     color: var(--secondary);
   }

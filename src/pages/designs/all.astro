@@ -29,16 +29,16 @@ console.log(data);
 
   <h2 class="filter">FILTER</h2>
   <hr />
-  <div class="flex">
-    <a href="/designs/recent"><p>recent</p></a>
+  <div class="flex">  
+    <a href="/designs/all"><p id="active">all</p></a>
+   <span class="line">|</span> 
+   <a href="/designs/recent"><p>recent</p></a>
     <span class="line">|</span>
     <a href="/designs/older"><p>older</p></a>
     <span class="line">|</span>
     <a href="/designs/national"><p>national</p></a>
     <span class="line">|</span>
     <a href="/designs/international"><p class="">international</p></a>
-    <span class="line">|</span>
-    <a href="/designs/all"><p class="">all</p></a>
   </div>
   <hr />
 
@@ -76,7 +76,8 @@ console.log(data);
     border: solid var(--body-contrast) 1px;
     border-top: none;
     padding: 1rem;
-    background: var(--footer-gradient);
+    background-image: url("/footer.webp");
+  background-size: cover;
   }
   .breadcrumb a,span,img{
     margin-top: auto;
@@ -160,5 +161,8 @@ console.log(data);
   .titlecontainer h1 {
     margin-top: 1rem;
     word-wrap::normal;
+  }
+  #active{
+    border-bottom: solid var(--body-contrast) 2px;
   }
 </style>

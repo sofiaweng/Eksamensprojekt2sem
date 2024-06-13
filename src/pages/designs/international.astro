@@ -29,16 +29,17 @@ console.log(data);
 
   <h2 class="filter">FILTER</h2>
   <hr />
-  <div class="flex">
+  <div class="flex"> 
+    <a href="/designs/all"><p class="">all</p></a>
+  <span class="line">|</span>
     <a href="/designs/recent"><p>recent</p></a>
     <span class="line">|</span>
     <a href="/designs/older"><p>older</p></a>
     <span class="line">|</span>
     <a href="/designs/national"><p>national</p></a>
     <span class="line">|</span>
-    <a href="/designs/international"><p class="">international</p></a>
-    <span class="line">|</span>
-    <a href="/designs/all"><p class="">all</p></a>
+    <a href="/designs/international"><p id="active">international</p></a>
+
   </div>
   <hr />
 
@@ -62,6 +63,9 @@ console.log(data);
 </MainLayout>
 
 <style>
+  #active{
+    border-bottom: solid var(--body-contrast) 2px;
+  }
 .breadcrumbcontainer{
   position: sticky;
   top: 0%;
